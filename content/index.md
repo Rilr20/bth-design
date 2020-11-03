@@ -3,11 +3,14 @@ Title: Home
 Description: This is our index page.
 ---
 
-Home page
+Hem
 ==========================
 
-The source for this page is in `content/index.md`.
+Välkommen till min hemsida till Designkursen på BTH.
 
-This is a sample home page written in markdown with some frontmatter defined.
+Här kommer det bli snygg och cool design gjord av mig!
 
-The pages make up a Anax site for demonstration purpose, it is something to start from.
+
+![bild](%assets_url%/img/cowboy.jpg)
+
+Katten har klätt ut sig till en cowboy till Halloween!
