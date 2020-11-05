@@ -35,6 +35,9 @@ body {
     border-bottom-right-radius: 2em;
 }
 
+.hero-div {
+    height: 10%;
+}
 
 .site-header {
     height: 300px;

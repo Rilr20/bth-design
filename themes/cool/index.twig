@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<!--Cool Theme-->
 <html class="no-js">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.ico">
+    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.png">
     <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
 
     {% if meta.description %}
@@ -23,6 +24,7 @@
     <!-- End -->
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
     <link rel="stylesheet" href="{{ theme_url }}/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="{{ theme_url }}/css/small.css" type="text/css" />
 
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
@@ -34,6 +36,7 @@
                 <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
                 <span class="sr-only">Toggle Menu</span>
             </a>
+            <div class="hero-div"></div>
             <div class="hero-text"> 
                 {% if pages["_meta"].meta.logo %}
                     <div class="logo" aria-hidden="true">

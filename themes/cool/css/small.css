@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+    .hero-image {
+        height: initial;
+    }
+
+    .site-header { 
+        height: 100%;
+    }
+}

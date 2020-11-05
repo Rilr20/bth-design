@@ -73,14 +73,6 @@
         padding: 0.5em 0;
     }
 
-    .hero-image {
-        height: initial;
-    }
-    
-    .site-header { 
-        height: 100%;
-    }
-
     .js #nav-toggle {
         display: block;
         float: right;
@@ -94,5 +86,13 @@
 
     .js #nav-toggle>* {
         vertical-align: middle;
+    }
+
+    .fa-bars {
+        text-shadow:2px 1px white
+    }
+    
+    .fa-times {
+        text-shadow:1px 1px white
     }
 }
