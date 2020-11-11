@@ -1,8 +1,8 @@
 ---
-Title: Report
+Title: Report 
 Description: My report for this course.
 ---
-Report
+Report <i class="fas fa-archive"></i>
 ===
 Här kan du läsa redovisnings texter
 

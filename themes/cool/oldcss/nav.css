@@ -1,0 +1,98 @@
+.hidden {
+    display: none !important;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0 none;
+}
+
+.slide {
+    overflow-y: hidden !important;
+    -webkit-transition: height 0.5s ease-in !important;
+    transition: height 0.5s ease-in !important;
+}
+
+#nav {
+    padding: 1.5em 0;
+    padding-right: 3em;
+    text-align: right;
+}
+
+#nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    margin-left: 1em;
+    padding: 0;
+    font-weight: bold;
+}
+
+#nav ul li a {
+    text-decoration: none;
+}
+
+#nav a:hover, #nav-toggle:hover {
+    text-decoration: underline;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+/* SMAll devices */
+
+@media (max-width: 767px) {
+     #nav {
+        clear: both;
+        padding: 0;
+    }
+
+    #nav ul {
+        padding-bottom: 1em;
+    }
+
+    #nav ul li {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    #nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js #nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 4em 0 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .js #nav-toggle>* {
+        vertical-align: middle;
+    }
+
+    .fa-bars {
+        text-shadow:2px 1px white
+    }
+    
+    .fa-times {
+        text-shadow:1px 1px white
+    }
+}

@@ -1,9 +1,9 @@
 ---
-Title: Home
+Title: Home 
 Description: This is our index page.
 ---
 
-Hem
+Hem <i class="fas fa-home"></i>
 ==========================
 
 Välkommen till min hemsida till Designkursen på BTH.

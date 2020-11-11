@@ -4,5 +4,5 @@ Tagline: Rikards Portfolio
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/Rilr20/design-bth
-      icon: github
+      icon: fab fa-github
 ---

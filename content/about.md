@@ -2,7 +2,7 @@
 title: About
 description: About page about stuff
 ---
-Om Mig
+Om Mig <i class="far fa-address-card"></i>
 ================
 Här är min  hemmsida, och vem är jag?
 
