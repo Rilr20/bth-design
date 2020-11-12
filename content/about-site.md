@@ -9,3 +9,4 @@ Om webbsidan
 
 Nu när sidan har scss installerat så använder jag variablar för färgerna som används i header, footer och i main. Detta för att det ska vara lättare att byta dem. 
 Jag provade på att använda color.adjust och gjorde länktexten lite rödare. Jag har ändrat typsnittets storlek, radavstånd och margin. Vilket har gjort det mer läsbart än vad standardvärderna var. 
+Jag har valt att ha fotter och header i en liknande nyans som finns i bakgrunden. Vilket gör att hero-images inte passar in men det blir ett nytt projekt att hitta en ny bild. 
