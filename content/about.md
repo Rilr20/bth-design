@@ -1,8 +1,10 @@
 ---
 title: About
 description: About page about stuff
+icon: far fa-address-card
+
 ---
-Om Mig <i class="far fa-address-card"></i>
+Om Mig 
 ================
 Här är min  hemmsida, och vem är jag?
 

@@ -1,6 +1,7 @@
 ---
 Title: Example
 Description: Markdown examples.
+icon: fas fa-code
 # hidden: true
 ---
 

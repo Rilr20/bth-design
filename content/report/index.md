@@ -1,8 +1,10 @@
 ---
 Title: Report 
 Description: My report for this course.
+icon: fas fa-archive
+
 ---
-Report <i class="fas fa-archive"></i>
+Report
 ===
 Här kan du läsa redovisnings texter
 
