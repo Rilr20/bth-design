@@ -1,0 +1,27 @@
+html {
+    font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fira Code', monospace;
+    font-size: $font-size;
+    line-height: $line;
+    margin-bottom: $magic-number;
+}
+
+p {
+    font-family: 'Noto Serif', serif;
+    font-size: $font-size * 0.75;
+    line-height: $line;
+    margin-bottom: $magic-number;
+   
+}
+
+.site-footer p {
+    font-size: $font-size * 0.7;
+}

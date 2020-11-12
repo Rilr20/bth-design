@@ -23,16 +23,15 @@
     {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End --> 
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
-    {# <link rel="stylesheet" href="{{ theme_url }}/css/nav.css" type="text/css" /> #}
-
+    {# <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" /> #}
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
 
     <header class="site-header">
         <div class="hero-image" style="background-image: url({{ base_url }}/image/breadkatt.png?sc=banner1&a=25,0,25,0);">
-            <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
-                <i class="fas fa-bars" aria-hidden="true" id="toggler"></i>
+            <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+                <i class="fas fa-bars" aria-hidden="true" id="toggler" class="toggler"></i>
                 <span class="sr-only">Toggle Menu</span>
             </a>
             <div class="hero-div"></div>
@@ -53,11 +52,14 @@
             </div>
         
         </div>
-        <nav id="nav" role="navigation" tabindex="">
+        <nav id="nav" class="nav" role="navigation" tabindex="">
             <ul>
                 {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
-                <li{% if page.id == current_page.id %} class="active" {% endif %}>
+                <li{% if page.id == current_page.id %} class="active gradient" {% endif %}>
                     <a href="{{ page.url }}">{{ page.title }}</a>
+                        {% if page.meta.icon %}
+                            <i class="{{ page.meta.icon }}"></i>
+                        {% endif %}
                     </li>
                 {% endfor %}
             </ul>
@@ -71,6 +73,7 @@
     </main>
 
     <footer class="site-footer">
+        
         {# <div class="container">  #}
             <div>
                 <p>Skapad av: Rikard Larsson &#169;{{ "now"|date("Y") }}</p>

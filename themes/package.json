@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
     "style": "sass cool/scss/style.scss cool/css/style.css --no-source-map",
-    "style-min": "sass cool/scss/style.scss cool/css/style.min.css --no-source-map --style compressed"
+    "style-min": "sass cool/scss/style.scss cool/css/style.min.css --no-source-map --style compressed",
+    "watch": "sass cool/scss/style.scss cool/css/style.css --no-source-map --watch",
+    "watch-min": "sass cool/scss/style.scss cool/css/style.min.css --no-source-map --style compressed --watch"
   },
   "keywords": [],
   "author": "",

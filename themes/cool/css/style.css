@@ -6457,105 +6457,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* html, body {
-    height: 100%;
-} */
-body {
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Header */
-.hero-text {
-  display: flex;
-  padding: 0.5em;
-  background-color: rgba(250, 250, 250, 0.7);
-  padding-left: 1em;
-  width: 15%;
-  min-width: 250px;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-}
-
-.hero-div {
-  height: 10%;
-}
-
-.site-header {
-  height: 330px;
-  flex: 0 0 auto;
-  background-color: #EAD5BA;
-  color: #2b2e30;
-  /* padding: 0 2em; */
-}
-
-.site-header a, .site-header a:visited {
-  color: #2b2e30;
-}
-
 /* Main */
-.main {
-  min-height: 580px;
-  flex: 1 0 auto;
-  padding: 2em;
-  background-color: #f0f0f0;
-  width: 70%;
-  margin: auto;
-  display: flex;
-}
-
-.container {
-  margin: auto;
-  padding: 0 2em 0 2em;
-  margin-top: 0;
-}
-
-.container h1, p {
-  padding-top: 0.8em;
-}
-
-.container a, a:visited {
-  color: #323031;
-}
-
-.container img {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Footer */
-.site-footer {
-  /* flex: 0 0 auto; */
-  background: #EAD5BA;
-  color: #2b2e30;
-  padding: 2em;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: space-between;
-}
-
-.site-footer a {
-  color: #f0f0f0;
-}
-
-.social a {
-  font-size: 22pt;
-  color: #323031;
-}
-
 @media (max-width: 767px) {
   .hero-image {
     height: initial;
@@ -6587,8 +6489,10 @@ body {
 }
 
 #nav {
-  padding: 1.5em 0;
+  padding-top: 22px;
   padding-right: 3em;
+  padding-bottom: 0px;
+  padding-top: 22px;
   text-align: right;
 }
 
@@ -6662,11 +6566,8 @@ body {
     text-shadow: 1px 1px white;
   }
 }
-.active {
-  border-bottom: solid 2px;
-}
-.active a:hover {
-  text-decoration: none;
+html {
+  font-size: 100%;
 }
 
 h1,
@@ -6676,16 +6577,59 @@ h4,
 h5,
 h6 {
   font-family: "Fira Code", monospace;
+  font-size: 1.5em;
+  line-height: 1.2;
+  margin-bottom: 1.8em;
 }
 
 p {
   font-family: "Noto Serif", serif;
+  font-size: 1.125em;
+  line-height: 1.2;
+  margin-bottom: 1.8em;
 }
 
-#nav ul li {
-  margin-bottom: 8px;
-  padding-left: 4px;
-  padding-right: 4px;
+.site-footer p {
+  font-size: 1.05em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* header */
+.site-header {
+  height: 100%;
+  flex: 0 0 auto;
+  background-color: #608aaa;
+  color: #302e30;
+  padding-bottom: 0.5em;
+}
+
+.site-header a,
+.site-header a:visited {
+  color: #302e30;
+}
+
+.hero-text {
+  display: flex;
+  padding: 0.5em;
+  background-color: rgba(250, 250, 250, 0.7);
+  padding-left: 1em;
+  width: 15%;
+  min-width: 265px;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
 }
 
 .hero-image {
@@ -6696,5 +6640,69 @@ p {
 }
 
 .hero-div {
-  height: 50px;
+  height: 20px;
+}
+
+/* Nav*/
+.active {
+  border-bottom: solid 2px #000;
+}
+
+/* Main */
+.main {
+  min-height: 580px;
+  flex: 1 0 auto;
+  padding: 2em;
+  background-color: #d0f5ff;
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+
+.container {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+.container h1,
+.container p {
+  padding-top: 0.8em;
+}
+.container a,
+.container a:visited {
+  color: #302e30;
+}
+.container img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Footer */
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+  background: #608aaa;
+  color: #302e30;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.site-footer a {
+  color: #f0f0f0;
+}
+
+.social a {
+  font-size: 22pt;
+  color: #f0f0f0;
 }
