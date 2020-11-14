@@ -3,11 +3,20 @@
 
 
 @media (max-width: 767px) {
+    .main {
+        width: 80%;
+    }
     .hero-image {
         height: initial;
     }
 
     .site-header { 
         height: 100%;
+    }
+}
+
+@media(min-width: 767px) {
+    .main {
+        width: 70%;
     }
 }

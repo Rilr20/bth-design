@@ -8,7 +8,6 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Noto+Serif&display=swap');
 
 @import '../oldcss/style';
 @import '../oldcss/nav';
@@ -78,7 +77,6 @@ body {
     flex: 1 0 auto;
     padding: 2em;
     background-color: $main-colour;
-    width: 70%;
     margin: auto;
     display: flex;
 }

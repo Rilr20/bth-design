@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&display=swap');
+
 html {
     font-size: 100%;
 }
@@ -15,7 +17,7 @@ h6 {
 }
 
 p {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: $font-size * 0.75;
     line-height: $line;
     margin-bottom: $magic-number;
