@@ -6521,7 +6521,8 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
 }
 
-.nav a:hover, .nav-toggle:hover {
+.nav a:hover,
+.nav-toggle:hover {
   text-decoration: underline;
 }
 
@@ -6662,6 +6663,7 @@ p {
 
 .kmom-links {
   font-size: 0.9em;
+  border-right: solid 1px rgba(48, 46, 48, 0.4);
 }
 
 .kmom-links a,
@@ -6726,7 +6728,7 @@ body {
 
 /* Main */
 .main {
-  min-height: 580px;
+  min-height: 600px;
   flex: 1 0 auto;
   padding: 2em;
   background-color: #d0f5ff;
