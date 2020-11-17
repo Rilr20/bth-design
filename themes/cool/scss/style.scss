@@ -9,8 +9,8 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 
 
-@import '../oldcss/style';
-@import '../oldcss/nav';
+@import 'small';
+@import 'nav';
 @import 'variables';
 @import 'typography';
 

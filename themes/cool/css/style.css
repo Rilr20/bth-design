@@ -6457,7 +6457,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/* Main */
 @media (max-width: 767px) {
   .main {
     width: 80%;
@@ -6497,7 +6496,7 @@ readers do not read off random characters that represent icons */
   transition: height 0.5s ease-in !important;
 }
 
-#nav {
+.nav {
   padding-top: 22px;
   padding-right: 3em;
   padding-bottom: 0;
@@ -6505,54 +6504,54 @@ readers do not read off random characters that represent icons */
   text-align: right;
 }
 
-#nav ul {
+.nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#nav ul li {
+.nav ul li {
   display: inline-block;
   margin-left: 1em;
   padding: 0;
   font-weight: bold;
 }
 
-#nav ul li a {
+.nav ul li a {
   text-decoration: none;
 }
 
-#nav a:hover, #nav-toggle:hover {
+.nav a:hover, .nav-toggle:hover {
   text-decoration: underline;
 }
 
-#nav-toggle {
+.nav-toggle {
   display: none;
 }
 
 /* SMAll devices */
 @media (max-width: 767px) {
-  #nav {
+  .nav {
     clear: both;
     padding: 0;
   }
 
-  #nav ul {
+  .nav ul {
     padding-bottom: 1em;
   }
 
-  #nav ul li {
+  .nav ul li {
     display: block;
     margin-left: 0;
     text-align: center;
   }
 
-  #nav ul li a {
+  .nav ul li a {
     display: block;
     padding: 0.5em 0;
   }
 
-  .js #nav-toggle {
+  .js .nav-toggle {
     display: block;
     float: right;
     width: 2em;
@@ -6563,16 +6562,16 @@ readers do not read off random characters that represent icons */
     cursor: pointer;
   }
 
-  .js #nav-toggle > * {
+  .js .nav-toggle > * {
     vertical-align: middle;
   }
 
   .fa-bars {
-    text-shadow: 2px 1px white;
+    text-shadow: 2px 1px #fff;
   }
 
   .fa-times {
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px #fff;
   }
 }
 html {
