@@ -1,0 +1,17 @@
+.kmom-frame {
+    display: flex;
+}
+
+.kmom-links,
+.kmom-content {
+    padding: 1em;
+}
+
+.kmom-links {
+    font-size: $font-size * 0.6;
+}
+
+.kmom-links a,
+.kmom-links a:visited {
+    color: $link-colour;
+}

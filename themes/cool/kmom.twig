@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--Cool Theme-->
+<html class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="{{ theme_url }}/../shared/img/favicon.png">
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}" />
+    {% endif %}
+    {% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}" />
+    {% endif %}
+
+    {% if current_page %}
+        <link rel="canonical" href="{{ current_page.url }}" />
+    {% endif %}
+
+    {# <link rel="stylesheet" href="{{ theme_url }}/../shared/css/font-awsome.min.css" type="text/css" />
+    <!-- Insert font choice here -->
+    {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
+    <!-- End --> 
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {# <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" /> #}
+</head>
+<!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
+<body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
+
+    <header class="site-header">
+        <div class="hero-image" style="background-image: url({{ base_url }}/image/breadkatt.png?sc=banner1&a=25,0,25,0);">
+            <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+                <i class="fas fa-bars" aria-hidden="true" id="toggler" class="toggler"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </a>
+            <div class="hero-div"></div>
+            <div class="hero-text"> 
+                {% if pages["_meta"].meta.logo %}
+                    <div class="logo" aria-hidden="true">
+                        <a href="{{ "index"|link }}">
+                            <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
+                        </a>
+                    </div>
+                {% endif %}
+                <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
+                    <a href="{{ "index"|link }}">
+                        <h1>{{ site_title }}</h1>
+                        {{ pages["_meta"].meta.tagline|markdown }}
+                    </a>
+                </div>
+            </div>
+        
+        </div>
+        <div class="nav">
+            <div id="nav" role="navigation" tabindex="">
+                <ul>
+                    {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
+                    <li{% if page.id == current_page.id %} class="active gradient" {% endif %}>
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                            {% if page.meta.icon %}
+                                <i class="{{ page.meta.icon }}"></i>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main" role="main">
+        <div class="kmom-frame">
+            <div class="kmom-links">
+                <a href="#"><h3>Kmom01</h3></a>
+                <a href="#"><h3>Kmom02</h3></a>
+                <a href="#"><h3>Kmom03</h3></a>
+                <a href="#"><h3>Kmom04</h3></a>
+                <a href="#"><h3>Kmom05</h3></a>
+                <a href="#"><h3>Kmom06</h3></a>
+                <a href="#"><h3>Projekt</h3></a>
+            </div>
+            <div class="kmom-content">
+            {{ content }}
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        
+        {# <div class="container">  #}
+            <div>
+                <p>Skapad av: Rikard Larsson &#169;{{ "now"|date("Y") }}</p>
+            
+            </div>
+            <div class="social">
+                <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
+                {% for social in pages["_meta"].meta.social %}
+                    <a href="{{ social.url }}" title="{{ social.title }}" role="button">
+                        <i class="{{ social.icon }}" aria-hidden="true"></i>
+                        <span class="sr-only">{{ social.title }}</span>
+                    </a>
+                {% endfor %}
+            </div>
+        {# </div> #}
+    </footer>
+
+    <script src="{{ theme_url }}/../shared//js/modernizr-3.3.1-custom.min.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared//js/utils.js" type="text/javascript"></script>
+    <script src="{{ theme_url }}/../shared//js/responsive-navbar.js" type="text/javascript"></script>
+</body>
+</html>
