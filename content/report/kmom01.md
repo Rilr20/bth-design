@@ -1,6 +1,7 @@
 ---
 title:  Report
 description: My report for kmom01.
+Template: kmom
 ---
 Kmom01
 ===
