@@ -16,3 +16,9 @@
 .kmom-links a:visited {
     color: $link-colour;
 }
+
+@media (max-width: 767px) {
+    .kmom-links {
+        display: none;
+    }
+}

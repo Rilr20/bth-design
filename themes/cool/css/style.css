@@ -6492,7 +6492,6 @@ readers do not read off random characters that represent icons */
 
 .slide {
   overflow-y: hidden !important;
-  -webkit-transition: height 0.5s ease-in !important;
   transition: height 0.5s ease-in !important;
 }
 
@@ -6671,6 +6670,11 @@ p {
   color: #302e30;
 }
 
+@media (max-width: 767px) {
+  .kmom-links {
+    display: none;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
