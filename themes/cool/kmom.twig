@@ -22,7 +22,11 @@
     <!-- Insert font choice here -->
     {# <link rel="stylesheet" href="{{ theme_url }}/../shared//css/dorid-sans.css" type="text/css" /> #}
     <!-- End --> 
-    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {% if config.session.theme == "dark" %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style-dark.css" type="text/css" />
+    {% else %}
+        <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+    {% endif %}
     {# <link rel="stylesheet" href="{{ theme_url }}/css/style.min.css" type="text/css" /> #}
 </head>
 <!-- "Widescreen-mode" can be activated in portfolio/config/config.yml -->
@@ -94,11 +98,11 @@
             </div>
             <div class="social">
                 <!-- Loads from FontAwesome (themes/shared/css/font-awesome.min.css) -->
-                {% for social in pages["_meta"].meta.social %}
-                    <a href="{{ social.url }}" title="{{ social.title }}" role="button">
-                        <i class="{{ social.icon }}" aria-hidden="true"></i>
-                        <span class="sr-only">{{ social.title }}</span>
-                    </a>
+                {% for social in pages["_meta"].meta.social %}<!--
+                    --><a href="{{ social.url }}" title="{{ social.title }}" role="button"><!--
+                    --><i class="{{ social.icon }}" aria-hidden="true"></i><!--
+                    --><span class="sr-only">{{ social.title }}</span><!--
+                    --></a>
                 {% endfor %}
             </div>
         {# </div> #}
