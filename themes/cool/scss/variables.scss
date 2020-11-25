@@ -1,6 +1,13 @@
 $main-colour: #d0f5ff;
 $link-colour: #111;
+$gradient-colour-a: #335467;
+$gradient-colour-b: #497D95;
 $header-footer-colour: lighten(#608aaa, 10%);
+$header-text-colour: #000;
+$body-text-colour: #000;
+$footer-links:lighten($link-colour, 10%);
+$active-link-colour: #000;
 $font-size: 1.5em;
 $line: 1.2;
 $magic-number: $font-size * $line;
+$hero-background: 250;

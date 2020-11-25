@@ -1,12 +1,11 @@
 .kmom-box {
     // border: 1px solid rgba($color: #000, $alpha: 0.5);
-    background: linear-gradient(to right, #2b5876, #4e4376);
+    background: linear-gradient(to right, $gradient-colour-a, $gradient-colour-b);
     grid-column: span 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5px;
-
 }
 
 .kmom-box-top {

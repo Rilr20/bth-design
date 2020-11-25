@@ -1,8 +1,8 @@
 @use 'sass:color';
 
 @import 'common';
-@import 'variables';
-@import 'typography';
+@import 'variables-dark';
+@import 'typography'; 
 @import 'nav';
 @import 'small';
 @import 'report';
@@ -117,19 +117,16 @@ body {
     align-content: space-between;
     background: $header-footer-colour;
     color: $link-colour;
-
     padding: {
         top: 1em;
         bottom: 1em;
         left: 2em;
         right: 2em;
-    }
-
-    ;
+    };
 
 }
 
-.site-footer a {
+.site-footer .social a {
     color: $footer-links;
 }
 
