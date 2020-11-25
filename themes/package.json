@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "watch": "sass cool/scss/style.scss cool/css/style.css --no-source-map --watch",
-    "watch-min": "sass cool/scss/style.scss cool/css/style.min.css --no-source-map --style compressed --watch",
+    "watch": "sass cool/scss/style.scss:cool/css/style.css cool/scss/style-dark.scss:cool/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass cool/scss/style.scss:cool/css/style.min.css cool/scss/style-dark.scss:cool/css/style-dark.min.css --no-source-map --watch --style compressed",
     "style": "npm run style-light && npm run style-dark",
     "style-min": "npm run style-min-light && npm run style-min-dark",
     "style-light": "sass cool/scss/style.scss cool/css/style.css --no-source-map",
