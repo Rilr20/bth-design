@@ -1,0 +1,35 @@
+.analysis {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-around;
+   align-items: baseline;
+   align-content: stretch;
+}
+.analysis-landingpage {
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+.analysis-landingpage h1 {
+    text-align: center;
+}
+
+.analysis-box {
+    margin: 5px;
+    background: linear-gradient(to right, $gradient-colour-a, $gradient-colour-b);
+    padding-bottom: 5px;
+}
+
+.analysis-box .kmom-box-top h2 {
+    color: $kmom-box;
+    text-decoration-color: $kmom-box;
+}
+
+.analysis-box a,
+.analysis-box a:visited {
+    color: #fff;
+    text-decoration-color: #fff;
+}

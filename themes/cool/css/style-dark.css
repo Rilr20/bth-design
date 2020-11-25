@@ -6671,6 +6671,7 @@ p {
 .kmom-links {
   font-size: 0.9em;
   border-right: solid 1px rgba(255, 255, 255, 0.4);
+  width: 15%;
 }
 
 .kmom-links a,
@@ -6683,6 +6684,41 @@ p {
     display: none;
   }
 }
+.analysis {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: baseline;
+  align-content: stretch;
+}
+
+.analysis-landingpage {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.analysis-landingpage h1 {
+  text-align: center;
+}
+
+.analysis-box {
+  margin: 5px;
+  background: linear-gradient(to right, #000, #161618);
+  padding-bottom: 5px;
+}
+
+.analysis-box .kmom-box-top h2 {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
+.analysis-box a,
+.analysis-box a:visited {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
