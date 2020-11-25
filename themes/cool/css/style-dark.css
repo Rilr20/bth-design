@@ -6622,7 +6622,7 @@ p {
 .kmom-box-content {
   padding: 0.5em;
   width: 100%;
-  background-color: #fff;
+  background-color: #1a1a1a;
 }
 
 .kmom-box.project {
@@ -6641,9 +6641,15 @@ p {
   justify-self: center;
 }
 
+.kmom-box .kmom-box-top h2 {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
 .kmom-box a,
 .kmom-box a:visited {
   color: #fff;
+  text-decoration-color: #fff;
 }
 
 @media (max-width: 767px) {

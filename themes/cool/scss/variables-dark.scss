@@ -3,10 +3,15 @@ $link-colour: #fff;
 $gradient-colour-a: #000;
 $gradient-colour-b: #161618;
 $header-footer-colour: lighten(#161618, 10%);
+$kmom-box-colour: lighten(#000, 10%);
+
 $header-text-colour: #fff;
 $body-text-colour: #fff;
 $footer-links: #fff;
 $active-link-colour: #818181;
+$kmom-box: $body-text-colour;
+
+
 $font-size: 1.5em;
 $line: 1.2;
 $magic-number: $font-size * $line;

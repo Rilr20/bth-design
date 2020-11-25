@@ -18,7 +18,7 @@
 .kmom-box-content {
     padding: 0.5em;
     width: 100%;
-    background-color: #fff;
+    background-color: $kmom-box-colour;
 }
 
 .kmom-box.project {
@@ -40,9 +40,14 @@
     }
 }
 
+.kmom-box .kmom-box-top h2 {
+    color: $kmom-box;
+    text-decoration-color: $kmom-box;
+}
 .kmom-box a,
 .kmom-box a:visited {
     color: #fff;
+    text-decoration-color: $body-text-colour;
 }
 
 @media (max-width: 767px) {

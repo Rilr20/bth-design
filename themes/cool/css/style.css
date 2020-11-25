@@ -6641,9 +6641,15 @@ p {
   justify-self: center;
 }
 
+.kmom-box .kmom-box-top h2 {
+  color: #fff;
+  text-decoration-color: #fff;
+}
+
 .kmom-box a,
 .kmom-box a:visited {
   color: #fff;
+  text-decoration-color: #000;
 }
 
 @media (max-width: 767px) {
