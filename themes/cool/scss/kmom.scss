@@ -10,11 +10,13 @@
 .kmom-links {
     font-size: $font-size * 0.6;
     border-right: solid 1px rgba($color: $link-colour, $alpha: 0.4);
-    width: 15%;
+    min-width: 120px;
 }
 
 .kmom-links a,
-.kmom-links a:visited {
+.kmom-links a:visited,
+.kmom-content p a,
+.kmom-content p a:visited {
     color: $link-colour;
 }
 
