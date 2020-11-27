@@ -20,6 +20,10 @@
     color: $link-colour;
 }
 
+.analysis-table td {
+    border: 2px solid $link-colour;
+}
+
 @media (max-width: 767px) {
     .kmom-links {
         display: none;

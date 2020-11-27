@@ -6457,6 +6457,120 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(-20deg, #000 0%, #161618 100%);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* header */
+.site-header {
+  height: 100%;
+  flex: 0 0 auto;
+  background-color: #2e2e33;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+.site-header a,
+.site-header a:visited {
+  color: #fff;
+}
+
+.hero-text {
+  display: flex;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-left: 1em;
+  width: 15%;
+  min-width: 265px;
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  box-shadow: 5px 5px rgba(255, 255, 255, 0.6);
+}
+
+.hero-image {
+  min-height: 280px;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-div {
+  height: 20px;
+}
+
+/* Nav*/
+.active {
+  border-bottom: solid 2px #818181;
+}
+
+/* Main */
+.main {
+  min-height: 600px;
+  flex: 1 0 auto;
+  padding: 2em;
+  background-color: #212124;
+  margin: auto;
+  display: flex;
+}
+
+.container {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+.container h1,
+.container p {
+  padding-top: 0.8em;
+}
+.container a,
+.container a:visited {
+  color: #fff;
+}
+.container img {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Footer */
+.site-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+  background: #2e2e33;
+  color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.social a {
+  font-size: 22pt;
+  color: #fff;
+}
+
 html {
   font-size: 100%;
 }
@@ -6680,6 +6794,10 @@ p {
   color: #fff;
 }
 
+.analysis-table td {
+  border: 2px solid #fff;
+}
+
 @media (max-width: 767px) {
   .kmom-links {
     display: none;
@@ -6718,118 +6836,4 @@ p {
 .analysis-box a:visited {
   color: #fff;
   text-decoration-color: #fff;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: linear-gradient(-20deg, #000 0%, #161618 100%);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-}
-
-/* header */
-.site-header {
-  height: 100%;
-  flex: 0 0 auto;
-  background-color: #2e2e33;
-  color: #fff;
-  padding-bottom: 0.5em;
-}
-
-.site-header a,
-.site-header a:visited {
-  color: #fff;
-}
-
-.hero-text {
-  display: flex;
-  padding: 0.5em;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding-left: 1em;
-  width: 15%;
-  min-width: 265px;
-  border-top-right-radius: 2em;
-  border-bottom-right-radius: 2em;
-  box-shadow: 5px 5px rgba(255, 255, 255, 0.6);
-}
-
-.hero-image {
-  min-height: 280px;
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero-div {
-  height: 20px;
-}
-
-/* Nav*/
-.active {
-  border-bottom: solid 2px #818181;
-}
-
-/* Main */
-.main {
-  min-height: 600px;
-  flex: 1 0 auto;
-  padding: 2em;
-  background-color: #212124;
-  margin: auto;
-  display: flex;
-}
-
-.container {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  padding-right: 2em;
-  padding-left: 2em;
-}
-.container h1,
-.container p {
-  padding-top: 0.8em;
-}
-.container a,
-.container a:visited {
-  color: #fff;
-}
-.container img {
-  margin: auto;
-  display: block;
-  width: 100%;
-  max-width: 400px;
-}
-
-/* Footer */
-.site-footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: space-between;
-  background: #2e2e33;
-  color: #fff;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-.site-footer .social a {
-  color: #fff;
-}
-
-.social a {
-  font-size: 22pt;
-  color: #fff;
 }
