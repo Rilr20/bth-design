@@ -33,7 +33,7 @@
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}>
 
     <header class="site-header">
-            <div class="hero-image" style="background-image: url({{ base_url }}/image/landscape.jpg?sc=banner1&a=25,0,25,0);">
+        <div class="hero-image" style="background-image: url({{ base_url }}/image/landscape.jpg?sc=banner1&a=25,0,25,0);">
             <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
                 <i class="fas fa-bars" aria-hidden="true" id="toggler" class="toggler"></i>
                 <span class="sr-only">Toggle Menu</span>
@@ -73,8 +73,17 @@
     </header>
 
     <main class="main" role="main">
-        <div class="analysis-landingpage">
-            {{ content }}
+        <div class="container">
+            <div class="gallery">
+                {{ content }}
+                {% for image in meta.images  %}
+                    <div class="image">
+                        <a href="{{ base_url }}/image/{{image.big}}">
+                        <img src="{{ base_url }}/image/{{image.url}}" alt="{{image.alt}}">
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </main>
 

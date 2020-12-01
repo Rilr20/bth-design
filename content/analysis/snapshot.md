@@ -1,15 +1,25 @@
 ---
 Title: Snapshots 
 Description: My report for this course.
-Template: analysreport
----
+template: gallery
+images: 
+    - alt: volvo
+      url: snapshots/volvo.jpg?w=512&h=512&crop-to-fit
+      big: snapshots/volvo.jpg
+    - alt: kia
+      url: /snapshots/kia.jpg?w=512&h=512&crop-to-fit
+      big: /snapshots/kia.jpg
+    - alt: volkswagen
+      url: snapshots/volkswagen.jpg?w=512&h=512&crop-to-fit
+      big: snapshots/volkswagen.jpg
+--- 
 Snapshots
 =======================
-Volvo
+<!-- Volvo
 <img style="width: 100%" src="%assets_url%/img/snapshots/volvo.jpg" alt="volvo">
 
 Volkswagen
 <img style="width: 100%" src="%assets_url%/img/snapshots/volkswagen.jpg" alt="volkswagen">
 
 Kia
-<img style="width: 100%" src="%assets_url%/img/snapshots/kia.jpg" alt="kia">
+<img style="width: 100%" src="%assets_url%/img/snapshots/kia.jpg" alt="kia"> -->

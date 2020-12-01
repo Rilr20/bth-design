@@ -10,6 +10,11 @@
     .site-header { 
         height: 100%;
     }
+    .social {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @media(min-width: 767px) {

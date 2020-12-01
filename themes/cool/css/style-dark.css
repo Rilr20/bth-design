@@ -6710,6 +6710,12 @@ p {
   .site-header {
     height: 100%;
   }
+
+  .social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media (min-width: 767px) {
   .main {
@@ -6836,4 +6842,32 @@ p {
 .analysis-box a:visited {
   color: #fff;
   text-decoration-color: #fff;
+}
+
+.gallery {
+  display: grid;
+  gap: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gallery h1 {
+  text-align: center;
+  grid-column: span 3;
+  justify-self: center;
+}
+
+.image {
+  margin-left: 1.5em;
+  margin-top: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 8px 8px 10px 6px rgba(190, 190, 190, 0.3);
+  grid-column: span 1;
+}
+
+@media (max-width: 767px) {
+  .image,
+.gallery h1 {
+    grid-column: span 1;
+  }
 }

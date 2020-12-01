@@ -1,0 +1,34 @@
+.gallery {
+    // background-color: black;
+    display: grid;
+    gap: 1em;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+
+    h1 {
+        text-align: center;
+        grid-column: span 3;
+        justify-self: center;
+    }
+}
+
+.image {
+    margin: {
+        left: 1.5em;
+        top: 1.5em;
+        right: 1.5em;
+        bottom: 1.5em;
+    }
+    // padding: 1em;
+    box-shadow: 8px 8px 10px 6px rgba($image-shadow, $image-shadow, $image-shadow, 0.3);
+    grid-column: span 1;
+}
+
+@media (max-width: 767px) {
+    .image,
+    .gallery h1 {
+        grid-column: span 1;
+    }
+}
