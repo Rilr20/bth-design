@@ -6847,8 +6847,6 @@ p {
 .gallery {
   display: grid;
   gap: 1em;
-  margin-left: auto;
-  margin-right: auto;
 }
 .gallery h1 {
   text-align: center;
@@ -6857,14 +6855,20 @@ p {
 }
 
 .image {
-  margin-left: 1.5em;
-  margin-top: 1.5em;
-  margin-right: 1.5em;
-  margin-bottom: 1.5em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
   box-shadow: 8px 8px 10px 6px rgba(65, 65, 65, 0.3);
   grid-column: span 1;
 }
 
+@media (max-width: 992px) {
+  .image,
+.gallery h1 {
+    grid-column: span 2;
+  }
+}
 @media (max-width: 767px) {
   .image,
 .gallery h1 {

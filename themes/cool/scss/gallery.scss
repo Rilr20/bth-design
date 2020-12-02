@@ -1,12 +1,8 @@
 .gallery {
     // background-color: black;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1em;
-    margin: {
-        left: auto;
-        right: auto;
-    }
-
     h1 {
         text-align: center;
         grid-column: span 3;
@@ -16,19 +12,33 @@
 
 .image {
     margin: {
-        left: 1.5em;
-        top: 1.5em;
-        right: 1.5em;
-        bottom: 1.5em;
+        left: 1em;
+        top: 1em;
+        right: 1em;
+        bottom: 1em;
     }
-    // padding: 1em;
-    box-shadow: 8px 8px 10px 6px rgba($image-shadow, $image-shadow, $image-shadow, 0.3);
+    box-shadow: 6px 6px 10px 6px rgba($image-shadow, $image-shadow, $image-shadow, 0.2);
     grid-column: span 1;
 }
+@media (max-width: 992px) {
 
+    .gallery  {
+        grid-template-columns: repeat(2, 1fr);
+        h1 {
+        text-align: center;
+        grid-column: span 2;
+        justify-self: center;
+    }
+    }
+}
 @media (max-width: 767px) {
-    .image,
-    .gallery h1 {
+
+    .gallery{
+        grid-template-columns: 1fr;
+        h1 {
+        text-align: center;
         grid-column: span 1;
+        justify-self: center;
+    }
     }
 }

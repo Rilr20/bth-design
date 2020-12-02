@@ -4,14 +4,11 @@ Description: My report for this course.
 template: gallery
 images: 
     - alt: volvo
-      url: snapshots/volvo.jpg?w=512&h=512&crop-to-fit
-      big: snapshots/volvo.jpg
+      url: snapshots/volvo.jpg
     - alt: kia
-      url: /snapshots/kia.jpg?w=512&h=512&crop-to-fit
-      big: /snapshots/kia.jpg
+      url: /snapshots/kia.jpg
     - alt: volkswagen
-      url: snapshots/volkswagen.jpg?w=512&h=512&crop-to-fit
-      big: snapshots/volkswagen.jpg
+      url: snapshots/volkswagen.jpg
 --- 
 Snapshots
 =======================

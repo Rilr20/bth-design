@@ -78,8 +78,13 @@
                 {{ content }}
                 {% for image in meta.images  %}
                     <div class="image">
-                        <a href="{{ base_url }}/image/{{image.big}}">
-                        <img src="{{ base_url }}/image/{{image.url}}" alt="{{image.alt}}">
+                        <a href="{{ base_url }}/image/{{image.url}}">
+                        {# <img src="{{ base_url }}/image/{{image.url}}" alt="{{image.alt}}"> #}
+                            <picture>
+                                <source media="(min-width: 668px)" srcset="{{ base_url }}/image/{{image.url}}?crop-to-fit&aspect-ratio=1:1&w=1200">
+                                <source media="(min-width: 376px)" srcset="{{ base_url }}/image/{{image.url}}?crop-to-fit&aspect-ratio=1:1&w=667">
+                                <img src="{{ base_url }}/image/{{image.url}}?crop-to-fit&aspect-ratio=1:1&w=375" alt="{{image.alt}}">
+                            </picture>
                         </a>
                     </div>
                 {% endfor %}
