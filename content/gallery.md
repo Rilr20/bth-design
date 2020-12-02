@@ -5,32 +5,23 @@ icon: fas fa-camera-retro
 template: gallery
 images: 
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-1.jpg
     - alt: test
-      url: landscape.jpg?w=512&h=512&crop-to-fit
-      big: landscape.jpg
+      url: img-2.jpg
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-3.jpg
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-4.jpg
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-5.jpg
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-6.jpg
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-7.jpg
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-8.jpg
     - alt: test
-      url: cowboy.jpg
-      big: cowboy.jpg
+      url: img-9.jpg
 ---
 Galleriet 
 ================
