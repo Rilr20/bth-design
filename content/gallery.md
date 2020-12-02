@@ -5,23 +5,23 @@ icon: fas fa-camera-retro
 template: gallery
 images: 
     - alt: test
-      url: img-1.jpg
+      url: gallery/img-1.jpg
     - alt: test
-      url: img-2.jpg
+      url: gallery/img-2.jpg
     - alt: test
-      url: img-3.jpg
+      url: gallery/img-3.jpg
     - alt: test
-      url: img-4.jpg
+      url: gallery/img-4.jpg
     - alt: test
-      url: img-5.jpg
+      url: gallery/img-5.jpg
     - alt: test
-      url: img-6.jpg
+      url: gallery/img-6.jpg
     - alt: test
-      url: img-7.jpg
+      url: gallery/img-7.jpg
     - alt: test
-      url: img-8.jpg
+      url: gallery/img-8.jpg
     - alt: test
-      url: img-9.jpg
+      url: gallery/img-9.jpg
 ---
 Galleriet 
 ================
