@@ -51,6 +51,10 @@ body {
     height: 20px;
 }
 
+.logo img {
+    width: 128px;
+    height: 128px;
+}
 /* Nav*/
 .active {
     border-bottom: solid 2px $active-link-colour;

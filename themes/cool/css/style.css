@@ -6508,6 +6508,11 @@ body {
   height: 20px;
 }
 
+.logo img {
+  width: 128px;
+  height: 128px;
+}
+
 /* Nav*/
 .active {
   border-bottom: solid 2px #000;
@@ -6834,7 +6839,7 @@ p {
 .analysis {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: baseline;
   align-content: stretch;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--Cool Theme-->
-<html class="no-js">
+<html lang="sv" class="no-js">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,7 +34,7 @@
 
     <header class="site-header">
         <div class="hero-image" style="background-image: url({{ base_url }}/image/landscape.jpg?sc=banner1&a=25,0,25,0&w=1800);">
-            <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+            <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false">
                 <i class="fas fa-bars" aria-hidden="true" id="toggler" class="toggler"></i>
                 <span class="sr-only">Toggle Menu</span>
             </a>
@@ -42,9 +42,7 @@
             <div class="hero-text"> 
                 {% if pages["_meta"].meta.logo %}
                     <div class="logo" aria-hidden="true">
-                        <a href="{{ "index"|link }}">
-                            <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
-                        </a>
+                        <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
                     </div>
                 {% endif %}
                 <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>
@@ -75,13 +73,13 @@
     <main class="main" role="main">
         <div class="kmom-frame">
             <div class="kmom-links">
-                <a href="kmom01"><h3>Kmom01</h3></a>
-                <a href="kmom02"><h3>Kmom02</h3></a>
-                <a href="kmom03"><h3>Kmom03</h3></a>
-                <a href="kmom04"><h3>Kmom04</h3></a>
-                <a href="kmom05"><h3>Kmom05</h3></a>
-                <a href="kmom06"><h3>Kmom06</h3></a>
-                <a href="kmom10"><h3>Projekt</h3></a>
+                <a href="kmom01"><h2>Kmom01</h2></a>
+                <a href="kmom02"><h2>Kmom02</h2></a>
+                <a href="kmom03"><h2>Kmom03</h2></a>
+                <a href="kmom04"><h2>Kmom04</h2></a>
+                <a href="kmom05"><h2>Kmom05</h2></a>
+                <a href="kmom06"><h2>Kmom06</h2></a>
+                <a href="kmom10"><h2>Projekt</h2></a>
             </div>
             <div class="kmom-content">
             {{ content }}

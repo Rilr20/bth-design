@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--Cool Theme-->
-<html class="no-js">
+<html lang="sv" class="no-js">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -34,7 +34,7 @@
 
     <header class="site-header">
         <div class="hero-image" style="background-image: url({{ base_url }}/image/landscape.jpg?sc=banner1&a=25,0,25,0&w=1800);">
-            <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+            <a id="nav-toggle" class="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false">
                 <i class="fas fa-bars" aria-hidden="true" id="toggler" class="toggler"></i>
                 <span class="sr-only">Toggle Menu</span>
             </a>
@@ -42,9 +42,7 @@
             <div class="hero-text"> 
                 {% if pages["_meta"].meta.logo %}
                     <div class="logo" aria-hidden="true">
-                        <a href="{{ "index"|link }}">
-                            <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
-                        </a>
+                        <img src="{{ base_url }}/{{ pages["_meta"].meta.logo|url }}" alt="" />
                     </div>
                 {% endif %}
                 <div class="title" {{ pages["_meta"].meta.tagline ? ' class="tagline"' }}>

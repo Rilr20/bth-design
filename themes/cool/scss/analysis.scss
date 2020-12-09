@@ -1,7 +1,7 @@
 .analysis {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: baseline;
     align-content: stretch;
@@ -37,4 +37,10 @@
 
 .excel {
     width: 100%;
+}
+
+@media (max-width: 767px) {
+    .analysis-box {
+        width: 100%;
+    }
 }
