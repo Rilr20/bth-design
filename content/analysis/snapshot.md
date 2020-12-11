@@ -27,6 +27,12 @@ images:
       url: snapshots/netonnet_kategori.png
     - alt: NetOnNet 3
       url: snapshots/netonnet_produkt.png
+    - alt: C418
+      url: snapshots/c418.jpg
+    - alt: daniel
+      url: snapshots/daniel.jpg
+    - alt: brodesbest
+      url: snapshots/brodesbest.jpg
 --- 
 Snapshots
 =======================
