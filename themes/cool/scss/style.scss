@@ -30,11 +30,15 @@ body {
 
 .hero-text {
     display: flex;
-    padding: 0.5em;
+    padding: {
+        top: 0.5em;
+        bottom: 0.5em;
+        right: 0.5em;
+    }
     background-color: rgba($hero-background, $hero-background, $hero-background, 0.7);
     padding-left: 1em;
-    width: 15%;
-    min-width: 265px;
+    min-width: 290px;
+    width: 18%;
     border-top-right-radius: 2em;
     border-bottom-right-radius: 2em;
     box-shadow: 5px 5px rgba($color: $link-colour, $alpha: 0.6);
@@ -118,9 +122,6 @@ body {
         left: 2em;
         right: 2em;
     }
-
-    ;
-
 }
 
 .site-footer a {
