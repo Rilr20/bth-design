@@ -33,6 +33,12 @@ images:
       url: snapshots/daniel.jpg
     - alt: brodesbest
       url: snapshots/brodesbest.jpg
+    - alt: lund
+      url: snapshots/lund.jpg
+    - alt: uppsala
+      url: snapshots/uppsala.jpg
+    - alt: trelleborg
+      url: snapshots/trelleborg.jpg
 --- 
 Snapshots
 =======================

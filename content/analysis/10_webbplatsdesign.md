@@ -6,7 +6,7 @@ Template: analysreport
 Webbplatsdesign och aktuella trender
 =======================
 
-Skriv en eller två rader om vad uppgiften handlar om.
+Analys av webbplatsers design med aktuella trender i fokus.
 
 Urval
 -----------------------
@@ -38,13 +38,11 @@ Hastigheten hos trelleborg är 1,5s på dator och 1,70 på mobilen
 
 Analys
 -----------------------
-Lunds hemmsida var långsammast då de har inte optimiserat bilderna som visas. Det är även varför deras hemmsida är över 10mb stor. Om de hade gjort bilderna mindre då hade gått mycket fortare att ladda. Uppsala och Trelleborg hade väldigt få bilder på sina sidor och laddade då väldigt snabbt. Trelleborgs sida laddade lite snabbare än uppsala fast den är större. 
+Lunds hemmsida var långsammast då de har inte optimiserat bilderna som visas. Det är även varför deras hemmsida är över 10mb stor. Om de hade gjort bilderna mindre då hade gått mycket fortare att ladda. Uppsala och Trelleborg hade väldigt få bilder på sina sidor och laddade då väldigt snabbt. Trelleborgs sida laddade lite snabbare än uppsala fast den är större. På grund av att trelleborg använder http2 protokollet. 
 
 Tillgängligheten hade man förtväntat sig skulle vara 100 på alla 3 sidorna när de är kommunala. Det var bara Uppsala som fick 100 poäng. Trelleborg har en div som inte syns och får avdrag på grund av ARIA input namnet. Tillgängligheten på lunds sida var den sämsta och detta på grund av att texten om corona är en h4 och inte en h2:a. 
 
 Trelleborgs och Uppsalas hemmsidor var snabbast då de inte har få bilder men bilderna de har är optimerade. Lund var långsam och var sämst när det kom till tillgänglighet. Uppsala var den sida som var snabbast och hade 100 tillgänglighet. Lund är sidan som inte riktigt följer designtrenderna med snabbladdningstid och tillgänglighet. 
-
-Diskutera och analysera de resultaten du fann.
 
 Referenser
 -----------------------
@@ -62,7 +60,6 @@ Referenser
 [Trelleborg](https://www.trelleborg.se/)
 
 [Lund](https://www.lund.se/#/)
-Ange de eventuella referenser du använder dig av, om några.
 
 Övrigt
 -----------------------
